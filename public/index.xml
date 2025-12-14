@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/tales/example-tale/</guid>
       <description>&lt;p&gt;Once upon a time, in a world not so different from our own, there lived a curious soul who discovered the magic of storytelling.&lt;/p&gt;&#xA;&lt;p&gt;This was a simple example tale to show you how your Hugo site works. You can write stories of any length here—from short flash fiction to longer narratives.&lt;/p&gt;&#xA;&lt;p&gt;To create a new tale, simply run:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new tales/your-tale-name.md&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then start writing your story in the file that&amp;rsquo;s created. Your tales will automatically appear on the home page, ready to be shared with the world.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Under the Second Sky</title>
+      <link>http://localhost:1313/tales/under-the-second-sky/</link>
+      <pubDate>Mon, 25 Aug 2025 18:08:02 +0100</pubDate>
+      <guid>http://localhost:1313/tales/under-the-second-sky/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;img/under-the-second-sky.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-first-warmth&#34;&gt;The First Warmth&lt;/h1&gt;&#xA;&lt;p&gt;The fog clung low to the ground, a thick, white blanket that shifted and sighed between the trees. It caught on roots and dipped into hollows, too heavy to rise, too slow to leave. The orchard always held it longer than anywhere else.&lt;/p&gt;&#xA;&lt;p&gt;Mira had arrived just as the sun was about to rise. She swung off her glider and stood for a moment at the edge of the orchard, letting the view settle into her. Rolling hills stretched away, softened by fog, and above them the sky was already tinged red with the coming dawn. The mirrors drifted far above, moving slow enough to feel like part of the heavens themselves, vast arcs of pale light that caught the night before the sun did, bending warmth down onto the land. At this hour their presence was clearest, a steadier glow than dawn, less fierce but just as certain.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
