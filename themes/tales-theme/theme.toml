@@ -1,0 +1,9 @@
+name = "tales-theme"
+license = "MIT"
+tags = ["tales", "stories", "minimal"]
+min_version = "0.100.0"
+
+[author]
+  name = "Tiny Tales"
+
+

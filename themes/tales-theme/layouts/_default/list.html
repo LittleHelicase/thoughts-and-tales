@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <ul class="tale-list">
+        {{ range .Pages }}
+        <li class="tale-item">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="tale-meta">
+                {{ if eq .Section "tales" }}
+                    <span class="content-type-badge tale">Tale</span>
+                {{ else if eq .Section "thoughts" }}
+                    <span class="content-type-badge thought">Thought</span>
+                {{ end }}
+                <span>{{ .Date.Format "January 2, 2006" }}</span>
+            </div>
+            {{ if .Summary }}
+            <div class="tale-summary">
+                {{ .Summary }}
+            </div>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+{{ end }}
+
+

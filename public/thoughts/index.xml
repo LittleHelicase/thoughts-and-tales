@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on tales and thoughts</title>
+    <link>https://example.org/thoughts/</link>
+    <description>Recent content in Thoughts on tales and thoughts</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Dec 2025 21:51:46 +0100</lastBuildDate>
+    <atom:link href="https://example.org/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Thought</title>
+      <link>https://example.org/thoughts/example-thought/</link>
+      <pubDate>Thu, 11 Dec 2025 21:51:46 +0100</pubDate>
+      <guid>https://example.org/thoughts/example-thought/</guid>
+      <description>&lt;p&gt;Sometimes the best ideas come when you least expect them. A thought can be fleeting, or it can grow into something more substantial.&lt;/p&gt;&#xA;&lt;p&gt;This is an example of a thought—a different kind of content from tales. Thoughts might be reflections, observations, or musings that don&amp;rsquo;t quite fit the narrative structure of a tale.&lt;/p&gt;&#xA;&lt;p&gt;Both tales and thoughts appear together on the home page, sorted by date, but they&amp;rsquo;re clearly differentiated so you can tell them apart at a glance.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

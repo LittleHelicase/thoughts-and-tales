@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tales on tales and thoughts</title>
+    <link>http://localhost:1313/tales/</link>
+    <description>Recent content in Tales on tales and thoughts</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Dec 2025 21:48:02 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tales/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Tale</title>
+      <link>http://localhost:1313/tales/example-tale/</link>
+      <pubDate>Tue, 09 Dec 2025 21:48:02 +0100</pubDate>
+      <guid>http://localhost:1313/tales/example-tale/</guid>
+      <description>&lt;p&gt;Once upon a time, in a world not so different from our own, there lived a curious soul who discovered the magic of storytelling.&lt;/p&gt;&#xA;&lt;p&gt;This was a simple example tale to show you how your Hugo site works. You can write stories of any length here—from short flash fiction to longer narratives.&lt;/p&gt;&#xA;&lt;p&gt;To create a new tale, simply run:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new tales/your-tale-name.md&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then start writing your story in the file that&amp;rsquo;s created. Your tales will automatically appear on the home page, ready to be shared with the world.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
