@@ -361,7 +361,7 @@ She looked up. A woman leaned slightly over a handrail from the next level, her 
 The woman’s eyes flicked to the basket. Then her eyebrows rose slightly, not alarmed, more like someone seeing a piece of a story they hadn’t expected to find again.
 
 “Well,” she said, already moving down the stairs.
-“Let’s see what you brought. I’m Sela”
+“Let’s see what you brought. I’m Sela”  
 “Mira.”
 
 The woman reached the base of the stairs just as Mira adjusted the strap on her basket. Up close, her expression stayed relaxed, but Mira could see her focus sharpen when she glanced at the oval casing.
@@ -373,13 +373,13 @@ The woman smiled, kind and curious.
 
 They walked together through a side corridor, wider here, gently lit, the floor lined with smooth-set panels that softened each step. The walls had shifted tone slightly, pale stone giving way to something warmer, almost bone-colored. Overhead, narrow skylight slits let in a diffuse glow that bent across the curve of the hall. The architecture was still quiet, but more structured now, less like something grown, more like something intended.
 
-“You from the orchard side?” Sela asked.
+“You are from the orchard side?” Sela asked.
 
 Mira nodded.
 
-“North slope. I was checking the rootbeds when I saw the flare.”
-“And decided to pick it up yourself?”
-“It didn’t seem like the kind of thing you leave out.”
+“North slope. I was checking the rootbeds when I saw the flare.”  
+“And decided to pick it up yourself?”  
+“It didn’t seem like the kind of thing you leave out.”  
 
 Sela laughed gently.
 
@@ -393,7 +393,7 @@ She gestured Mira through.
 
 “You can hand it over directly.”
 
-What Falls and What Rises
+# What Falls and What Rises
 
 Mira stepped through the door into a softly lit space that felt both active and contained, like walking into the inside of a pulse.
 
@@ -403,8 +403,8 @@ No one noticed her right away.
 
 She paused, unsure.
 
-“There’s a jitter on the shielding readouts,” one voice said.
-“Baseline drift or live?”
+“There’s a jitter on the shielding readouts,” one voice said.  
+“Baseline drift or live?”  
 “Not sure yet. The timestamp came late—could’ve been delayed through routing.”
 
 Then a man turned. Older, composed, wearing a layered work apron dusted with fine trace powder.
@@ -439,7 +439,7 @@ The man looked at her, not surprised by the question, not alarmed either.
 
 Mira nodded.
 
-“To keep the warmth from scattering too far.”
+“To keep the warmth from scattering too far.”  
 “Exactly. The mirrors can only respond if they know where the balance is tipping.”
 
 He tapped the casing lightly with one knuckle.
