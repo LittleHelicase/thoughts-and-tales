@@ -4,7 +4,7 @@ draft = false
 title = 'Under the Second Sky'
 +++
 
-![](img/under-the-second-sky.png)
+![](/img/under-the-second-sky.png)
 
 # The First Warmth
 
