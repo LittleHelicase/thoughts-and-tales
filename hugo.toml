@@ -1,4 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://littlehelicase.github.io/thoughts-and-tales/'
 languageCode = 'en-us'
 title = 'tales and thoughts'
 theme = 'tales-theme'
+relativeURLs = false
+canonifyURLs = true
