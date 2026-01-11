@@ -32,18 +32,29 @@
         header {
             margin-bottom: 4rem;
             padding: 2.5rem 0;
-            background: #1a1a1a;
+            height: 300px;
+            padding: 0;
             margin-top: 0;
             margin-left: calc(50% - 50vw);
             margin-right: calc(50% - 50vw);
             width: 100vw;
             box-sizing: border-box;
+            position: relative;
+        }
+        
+        #sky-canvas {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: block;
+            background: #0a0a0a;
+            z-index: -1;
         }
         
         .header-content {
             max-width: 700px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 2.5rem 2rem;
         }
         
         h1, h2, h3 {
@@ -299,6 +310,7 @@
                 Hey, I'm <span class="name">Max</span> and I enjoy exploring the world through sharing thoughts and telling tales.
             </div>
         </div>
+        <canvas id="sky-canvas"></canvas>
     </header>
     
     <main>
@@ -308,6 +320,8 @@
     <footer>
         <p>{{ now.Year }} {{ .Site.Title }} by <span class="author-name">Maximilian Klein</span></p>
     </footer>
+    
+    <script src="{{ "/js/sky.js" | relURL }}"></script>
 </body>
 </html>
 
