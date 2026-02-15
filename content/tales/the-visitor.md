@@ -103,7 +103,7 @@ John didn’t say anything and simply followed the plane's path.
 
 Luke: “One plane can carry a few hundred people at a time”  
 John: “But how can that thing fly”  
-Luke: “The wings, going fast..” knowing very well that he doesn’t understand the details himself.
+Luke: “The wings, going fast..” trying to hide that he doesn’t really understand the details himself.
 
 For John this was enough, he didn’t say much on the remaining ride to Luke’s home. John started accepting almost everything that seemed magical to him. Lights turning on automatically, people on scooters zooming past them. At times he pinched himself to make sure that this was no dream. It wasn’t.
 
