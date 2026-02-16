@@ -1,6 +1,7 @@
 +++
 date = '2025-12-31T16:08:02+01:00'
 draft = false
+sky = "night"
 title = 'The Visitor'
 +++
 

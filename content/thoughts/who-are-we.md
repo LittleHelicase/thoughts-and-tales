@@ -1,6 +1,7 @@
 +++
 date = '2025-12-14T20:05:46+01:00'
 draft = false
+sky = "night"
 title = 'Who are we – digested as a software engineer'
 +++
 
