@@ -1,6 +1,8 @@
 +++
 date = '2026-02-15T19:45:25+01:00'
 title = 'My recipe for being energetic'
+sky = "atmosphere"
+sun_position = [-2.5, 0.7]
 +++
 
 If you know me you probably also know that I mostly run around quite happy and energetic. I'm pretty sure there is no magic formula that everyone can apply to be more energetic or more happy. I however still believe that there are a set of quite simple rules that are important for staying energetic and that often can make you happier as well.

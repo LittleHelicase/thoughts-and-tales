@@ -1,6 +1,8 @@
 +++
 date = '2025-08-25T18:08:02+01:00'
 draft = false
+sky = "atmosphere"
+sun_position = [0.8, 0.9]
 title = 'Under the Second Sky'
 +++
 
