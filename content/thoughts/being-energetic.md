@@ -19,7 +19,7 @@ Let's dive in a bit to give them a bit more context.
 This one might sound like a YouTube Shorts and maybe there is some truth to it, but I believe there are a few things to it that are not mentioned very often which I find super important.
 
 **Your body needs to learn to be active**  
-Many of us work in an office or similar where we do not really move that much. People try to do some sport to compensate which is in theory good, but there is a catch. A few rather short sessions a week do not have the necessary effect. I for example love to go running and a few years back I stopped running in the morning, because I was tired during the day. Especially going for longer distances was problematic. I usually went for short runs when I had to work and on the weekends I went for a longer run – often paired with a short nap to re-energize. I thought that's how it simply is supposed to be.  
+Many of us work in an office or similar where we do not really move that much. People try to do some sport to compensate which is good in theory, but there is a catch. A few rather short sessions a week do not have the necessary effect. I for example love to go running and a few years back I stopped running in the morning, because I was tired during the day. Especially going for longer distances was problematic. I usually went for short runs when I had to work and on the weekends I went for a longer run – often paired with a short nap to re-energize. I thought that's how it simply is supposed to be.  
 During Corona I started riding my bike more and I wanted to avoid public transport so I visited my parents around 160km away with the bike. The first time took me around 12 hours and that was quite exhausting. I was certain that I wouldn't bike back when I arrived. But somehow after two days at my parents I thought about going back by bike again. Since then I increased my time on the bike dramatically – at times I spend 60 hours in a week on my bike. You might think that I would be super exhausted afterwards. But it is usually quite the opposite. After I do lots of long trips I'm really energetic in the following days and weeks.
 Lately I started running longer distances like 20km on the weekend and instead of calming down afterwards at home I always force myself to do something like go for a walk, do a short trip on my bike etc.. And somehow I'm way less exhausted. I'm now even going for 10km runs in the morning during the week quite regularly without any fatigue afterwards. 
 
@@ -33,7 +33,7 @@ I set myself a rough goal every week of 10hours of activities. Swimming, running
 *Disclaimer: I'm really no expert here and if you suffer from mental health problems this will not be any replacement for a professional.*  
 That being said: I'm pretty sure that it is really healthy to have some time to let your mind wander. When I do sports it sometimes even feels like trance to me. If you feel you always think so much about everything, ride your bike for an extended period of time. After some time you thought all the things you wanted to think about and your mind clears up. I was able to calm down so much, lose anxiety, nervousness or stress by giving myself this time off. You don't need to be alone for that it will simply happen automatically. Your body does this for you. Maybe don't watch Tik-Tok videos while you do that and I for example don't even listen to music. Enjoy the world around you, enjoy maybe a bit being bored, that's totally fine. But do it for an extended period of time, not simply a 5 minute walk after lunch.
 
-If you train your body to stay active by not giving in and simply falling back into the couch after doing some activity, making it a habit to move enough in a week and give your mind the ability to wander I believe many will get energy back.
+If you train your body to stay active by not giving in and simply falling back into the couch after doing some activity, making it a habit to move enough in a week and give your mind the ability to wander. With that I believe many could get energy back.
 
 ## There are no shortcuts
 
@@ -47,4 +47,4 @@ You don't need to play an instrument, there are probably thousand other things y
 
 ---
 
-Putting it all together I believe that being active and achieving something that you struggle with are the best two ways to acquire a more lasting source of positive energy.
+Being active and achieving something that you struggle with are in my opinion the best two ways to acquire a more lasting source of positive energy.
