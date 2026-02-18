@@ -43,6 +43,9 @@
             width: 100vw;
             box-sizing: border-box;
             position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            --sun-prox: 0; /* 0 = far, 1 = close */
         }
 
         #sky-canvas {
@@ -58,6 +61,9 @@
             max-width: 700px;
             margin: 0 auto;
             padding: 2.5rem 2rem;
+            position: relative; 
+            /* Ensure text is above canvas via stacking context if needed, 
+               though z-index:-1 on canvas usually handles it */
         }
 
         h1,
@@ -75,6 +81,15 @@
             line-height: 1.2;
             font-weight: 400;
             letter-spacing: -0.03em;
+            /* Dynamic shadow: aggressive contrast when sun is close */
+            /* 1. Tight outline for edge definition */
+            /* 2. Medium shadow for depth */
+            /* 3. Large bloom to darken the area behind */
+            text-shadow: 
+                0 0 5px rgba(0,0,0, calc(0.1 + 0.9 * var(--sun-prox))), 
+                0 4px 15px rgba(0,0,0, calc(0.1 + 0.8 * var(--sun-prox))),
+                0 0 60px rgba(0,0,0, calc(0.9 * var(--sun-prox)));
+            transition: text-shadow 0.1s linear;
         }
 
         header h1 a {
@@ -94,12 +109,18 @@
             color: #d1d5db;
             font-style: italic;
             max-width: 600px;
+            /* Stronger shadow for intro text too */
+            text-shadow: 
+                0 1px 4px rgba(0,0,0, calc(0.2 + 0.8 * var(--sun-prox))),
+                0 0 30px rgba(0,0,0, calc(0.8 * var(--sun-prox)));
+            transition: all 0.1s linear;
         }
 
         .intro-text .name {
             color: #a78bfa;
             font-weight: 600;
             font-style: normal;
+            text-shadow: 0 1px 4px rgba(0,0,0, calc(0.3 + 0.7 * var(--sun-prox)));
         }
 
         nav {

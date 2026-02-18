@@ -251,8 +251,8 @@
     let startTime = Date.now();
 
     // Get sun config from data attributes (Target Position)
-    const targetSunX = parseFloat(canvas.dataset.sunX || "0.0");
-    const targetSunY = parseFloat(canvas.dataset.sunY || "0.05");
+    let targetSunX = parseFloat(canvas.dataset.sunX || "0.0");
+    let targetSunY = parseFloat(canvas.dataset.sunY || "0.05");
 
     console.log("Sun Animation Debug:");
     console.log("Target Sun:", targetSunX, targetSunY);
@@ -276,11 +276,106 @@
         console.warn("Error reading sessionStorage:", e);
     }
 
+    // Save current position on unload
     function saveState() {
         sessionStorage.setItem('tales_sun_pos', `${currentSunX},${currentSunY}`);
     }
     window.addEventListener('beforeunload', saveState);
     if (document.visibilityState === 'hidden') saveState();
+
+    // Interaction Logic (Touch & Mouse)
+    let isDragging = false;
+
+    function handleInput(x, y) {
+        const rect = canvas.getBoundingClientRect();
+        const u = (x - rect.left) / rect.width;
+        const v = (y - rect.top) / rect.height;
+
+        // Convert to Normalized Device Coordinates (-1 to 1)
+        // Y is flipped (Canvas 0 at top, GL 0 at bottom)
+        const ndcX = u * 2.0 - 1.0;
+        const ndcY = (1.0 - v) * 2.0 - 1.0;
+
+        // Account for Aspect Ratio on X
+        const aspect = canvas.width / canvas.height;
+
+        // Shader Expectation:
+        // sunScreenPos = vec2(u_sun_pos.x, u_sun_pos.y - 0.5);
+        // p.x *= aspect;
+
+        // So targetX should be ndcX * aspect
+        // targetY - 0.5 = ndcY  => targetY = ndcY + 0.5
+
+        targetSunX = ndcX * aspect;
+        targetSunY = ndcY + 0.5;
+
+        // Instant update while dragging for responsiveness
+        currentSunX = targetSunX;
+        currentSunY = targetSunY;
+    }
+
+    function onMouseDown(e) {
+        // Ignore clicks on links or buttons
+        if (e.target.tagName === 'A' || e.target.closest('a') || e.target.tagName === 'BUTTON') return;
+
+        isDragging = true;
+        handleInput(e.clientX, e.clientY);
+        canvas.style.cursor = 'grabbing';
+    }
+
+    function onMouseMove(e) {
+        if (!isDragging) return;
+        handleInput(e.clientX, e.clientY);
+    }
+
+    function onMouseUp() {
+        if (isDragging) { } // Removed console.log
+        isDragging = false;
+        canvas.style.cursor = 'default';
+    }
+
+    function onTouchStart(e) {
+        // Ignore touches on links
+        if (e.target.tagName === 'A' || e.target.closest('a') || e.target.tagName === 'BUTTON') return;
+
+        const touch = e.touches[0];
+        isDragging = true;
+        handleInput(touch.clientX, touch.clientY);
+
+        // Prevent default to stop scrolling while dragging sun
+        // But only if we successfully started dragging (not on a link)
+        if (e.cancelable) e.preventDefault();
+    }
+
+    function onTouchMove(e) {
+        if (!isDragging) return;
+        const touch = e.touches[0];
+        handleInput(touch.clientX, touch.clientY);
+        if (e.cancelable) e.preventDefault();
+    }
+
+    function onTouchEnd() {
+        isDragging = false;
+    }
+
+    // Attach listeners to the parent header to capture events bubbling up
+    // even if they hit the text content above the canvas
+    const headerElement = canvas.parentElement;
+
+    if (headerElement) {
+        // Mouse
+        headerElement.addEventListener('mousedown', onMouseDown);
+        window.addEventListener('mousemove', onMouseMove);
+        window.addEventListener('mouseup', onMouseUp);
+
+        // Touch - Use non-passive to allow preventDefault
+        headerElement.addEventListener('touchstart', onTouchStart, { passive: false });
+        window.addEventListener('touchmove', onTouchMove, { passive: false });
+        window.addEventListener('touchend', onTouchEnd);
+    } else {
+        console.warn("Header element not found for interaction binding");
+    }
+
 
     function resize() {
         const header = canvas.closest('header');
@@ -294,19 +389,78 @@
     window.addEventListener('resize', resize);
     resize();
 
+    // Text interference calculation
+    // We want to know if the sun is behind text to darken the text shadow
+    function updateTextShadow() {
+        const header = canvas.parentElement;
+        if (!header) return;
+
+        const title = header.querySelector('h1');
+        const intro = header.querySelector('.intro-text');
+
+        // Sun Screen Position (Pixels relative to canvas top-left)
+        // Inverse of handleInput logic
+        const aspect = canvas.width / canvas.height;
+        const ndcX = currentSunX / aspect;
+        const ndcY = currentSunY - 0.5;
+
+        // ndcX = u * 2 - 1  => u = (ndcX + 1) / 2
+        // ndcY = (1 - v) * 2 - 1 => v = 1 - (ndcY + 1) / 2
+
+        const u = (ndcX + 1.0) * 0.5;
+        const v = 1.0 - (ndcY + 1.0) * 0.5;
+
+        const sunPxX = u * canvas.width;
+        const sunPxY = v * canvas.height;
+
+        let minDist = 10000.0;
+
+        // Helper to get distance to rect
+        function distToRect(rect, x, y) {
+            // Rect is relative to viewport, so we need to offset by canvas position if canvas isn't at 0,0 locally?
+            // Canvas and text are both in header. Let's use getBoundingClientRect for both and compare.
+            const canvasRect = canvas.getBoundingClientRect();
+            const sunGlobalX = canvasRect.left + x;
+            const sunGlobalY = canvasRect.top + y;
+
+            // Find closest point in rect to sun
+            const clampedX = Math.max(rect.left, Math.min(sunGlobalX, rect.right));
+            const clampedY = Math.max(rect.top, Math.min(sunGlobalY, rect.bottom));
+
+            const dx = sunGlobalX - clampedX;
+            const dy = sunGlobalY - clampedY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        if (title) minDist = Math.min(minDist, distToRect(title.getBoundingClientRect(), sunPxX, sunPxY));
+        if (intro) minDist = Math.min(minDist, distToRect(intro.getBoundingClientRect(), sunPxX, sunPxY));
+
+        // Normalize: 0px = 1.0 (full shadow), 250px = 0.0 (no extra shadow)
+        const threshold = 250.0;
+        const prox = Math.max(0.0, 1.0 - minDist / threshold);
+
+        header.style.setProperty('--sun-prox', prox.toFixed(3));
+    }
+
     function render() {
         const time = (Date.now() - startTime) / 1000;
 
-        // Lerp towards target
-        const lerpSpeed = 0.02;
-        currentSunX += (targetSunX - currentSunX) * lerpSpeed;
-        currentSunY += (targetSunY - currentSunY) * lerpSpeed;
+        // Lerp towards target (if not dragging)
+        if (!isDragging) {
+            const lerpSpeed = 0.02;
+            currentSunX += (targetSunX - currentSunX) * lerpSpeed;
+            currentSunY += (targetSunY - currentSunY) * lerpSpeed;
+        }
 
         gl.uniform1f(timeLoc, time);
         gl.uniform2f(resolutionLoc, canvas.width, canvas.height);
         gl.uniform2f(sunPosLoc, currentSunX, currentSunY);
 
         gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+        // Update text shadow every frame
+        updateTextShadow();
+
         requestAnimationFrame(render);
     }
     requestAnimationFrame(render);
