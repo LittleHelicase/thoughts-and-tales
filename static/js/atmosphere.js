@@ -130,7 +130,7 @@
                 float phaseR = 3.0 / (16.0 * 3.14159) * (1.0 + mu * mu);
                 float phaseM = 3.0 / (8.0 * 3.14159) * ((1.0 - G * G) * (1.0 + mu * mu)) / ((2.0 + G * G) * pow(1.0 + G * G - 2.0 * G * mu, 1.5));
 
-                color = (totalRayleigh * phaseR * RAYLEIGH_COEFF + totalMie * phaseM * MIE_COEFF) * 40.0; 
+                color = (totalRayleigh * phaseR * RAYLEIGH_COEFF + totalMie * phaseM * MIE_COEFF) * 80.0; 
             }
             
             // Draw Sun Disk (Screen Space)
