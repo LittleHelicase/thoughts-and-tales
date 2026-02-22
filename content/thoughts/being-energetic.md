@@ -49,4 +49,4 @@ You don't need to play an instrument, there are probably thousand other things y
 
 Being active and achieving something that you struggle with are in my opinion the best two ways to acquire a more lasting source of positive energy.
 
-[^1]: After publishing I found this article about a meta-meta-analysis that said the most effective way to treat depression is exercise: https://www.sciencedaily.com/releases/2026/02/260213020412.htm
+[^1]: After publishing I found this article about a meta-meta-analysis that saw a statistical significant effect of exercise on depression, making it one of the most effective treatments: https://www.sciencedaily.com/releases/2026/02/260213020412.htm
