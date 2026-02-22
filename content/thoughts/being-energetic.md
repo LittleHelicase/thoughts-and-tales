@@ -30,7 +30,7 @@ I love to run rather fast, I swim "okay"-fast. But I for example usually do not 
 I set myself a rough goal every week of 10hours of activities. Swimming, running, but also riding my bike or even walking for at least 30minutes is all fine. I want to reach 10 hours of activity every week. It is totally fine to exceed this, but I clearly notice that I lose something if I do not try to stay consistent. This might sound like a lot of time, but it also serves a special other purpose.
 
 **Mental health**  
-*Disclaimer: I'm really no expert here and if you suffer from mental health problems this will not be any replacement for a professional.*  
+*Disclaimer: I'm really no expert here and if you suffer from mental health problems this will not be any replacement for a professional.* [^1]  
 That being said: I'm pretty sure that it is really healthy to have some time to let your mind wander. When I do sports it sometimes even feels like trance to me. If you feel you always think so much about everything, ride your bike for an extended period of time. After some time you thought all the things you wanted to think about and your mind clears up. I was able to calm down so much, lose anxiety, nervousness or stress by giving myself this time off. You don't need to be alone for that it will simply happen automatically. Your body does this for you. Maybe don't watch Tik-Tok videos while you do that and I for example don't even listen to music. Enjoy the world around you, enjoy maybe a bit being bored, that's totally fine. But do it for an extended period of time, not simply a 5 minute walk after lunch.
 
 If you train your body to stay active by not giving in and simply falling back into the couch after doing some activity, making it a habit to move enough in a week and give your mind the ability to wander. With that I believe many could get energy back.
@@ -48,3 +48,5 @@ You don't need to play an instrument, there are probably thousand other things y
 ---
 
 Being active and achieving something that you struggle with are in my opinion the best two ways to acquire a more lasting source of positive energy.
+
+[^1]: After publishing I found this article about a meta-meta-analysis that said the most effective way to treat depression is exercise: https://www.sciencedaily.com/releases/2026/02/260213020412.htm
